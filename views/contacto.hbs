@@ -1,0 +1,35 @@
+<section id="programas">
+        <div class="container">
+            <h2>Contactanos</h2>
+
+        <form action="./contacto" method="post">
+
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Nombre">
+            </div>
+            
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" name="email" id="email" placeholder="email@ejemplo.com">
+            </div>
+
+            <div class="mb-3">
+                <label for="mensaje" class="form-label">Mensaje</label>
+                <textarea class="form-control" name="mensaje" id="mensaje" rows="3" placeholder="Mensaje"></textarea>
+            </div>
+
+            <div class="text-center">
+                <h5 style="color: blueviolet;">
+                    {{ validacion }}
+                </h5>
+            </div>
+
+            <div class="d-grid gap-2 col-6 mx-auto ">
+                <input type="submit" class="btn btn-secondary" value="Enviar">
+            </div>
+
+        </form>
+
+        </div>
+    </section>
