@@ -10,20 +10,20 @@ const nodemailer = require('nodemailer');
 const { rootCertificates } = require('tls');
 
 //conexion base de datos
-const conexion = mysql.createConnection({
-    host: process.env.HOST,
-    user: process.env.USER,
-    password: process.env.PASSWORD,
-    database: process.env.DATABASE
-});
+//const conexion = mysql.createConnection({
+//    host: process.env.HOST,
+//    user: process.env.USER,
+//    password: process.env.PASSWORD,
+//    database: process.env.DATABASE
+//});
 
-conexion.connect((err) => {
-    if (err) {
-        console.error(`Error en la conexion: ${err.stack}`)
-        return;
-    }
-    console.log((`conectado a la base de datos ${process.env.DATABASE}`));
-}) 
+//conexion.connect((err) => {
+//    if (err) {
+//        console.error(`Error en la conexion: ${err.stack}`)
+//        return;
+//    }
+//    console.log((`conectado a la base de datos ${process.env.DATABASE}`));
+//}) 
 
 //configuracion middelwares
 app.use(express.json());
